@@ -16,7 +16,7 @@ const Images = function (image_url, title, description, keyword, horns) {
 };
 $('button').on('click',function(){
 
-  $('#photo-template').replaceAll();
+  $('#photo-template').empty();
   if(flag === false){
     flag = true;
   }
