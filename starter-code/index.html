@@ -6,8 +6,8 @@
     <title>The Gallery of Horns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="./css/layouts.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/module.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
   </head>
@@ -22,11 +22,20 @@
     <main>
         <script id="entry-template" type="text/x-handlebars-template">
       <section id="photo-template">
-        <h2>{{title}}</h2>
-        <h3>{{keyword}}</h3>
-        <img src={{image}} alt={{keyword}}>
-        <p class="one">{{description}}</p>
-        <p class="two">{{horns}}</p>
+        <h2 class="json1">{{title}}</h2>
+        <h3 class="json1">{{keyword}}</h3>
+        <img src={{image}} alt={{keyword}} class="json1">
+        <p class="json1">{{description}}</p>
+        <p class="json1">{{horns}}</p>
+      </section>
+    </script>
+        <script id="entry-template2" type="text/x-handlebars-template">
+      <section id="photo-template2" style="display: none">
+        <h2 class="json2">{{title2}}</h2>
+        <h3 class="json2">{{keyword2}}</h3>
+        <img src={{image}} alt={{keyword2}} class="json2">
+        <p class="json2">{{description2}}</p>
+        <p class="json2">{{horns2}}</p>
       </section>
     </script>
     </main>
